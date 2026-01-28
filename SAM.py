@@ -37,7 +37,7 @@ for idx, row in twitter_samples.iterrows():
 import random
 random.shuffle(tweets)
 
-keywords = {"school", "lunch", "breakfast", "milk", "dairy", "whole-milk", "drink", "students", "student", "elementary", "middle"}
+keywords = {"organic", "natural", "egg", "milk", "dairy", "meat", "gmo", "genetically modified", "egg", "livestock", "free-range", "cage-free", "humane"}
 
 def extract_features(words):
     return dict([(word, True) for word in words])
