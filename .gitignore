@@ -1,0 +1,11 @@
+.env
+reddit_healthy_food.csv
+reddit_meat.csv
+reddit_milk.csv
+reddit_nutrition.csv
+reddit_organic.csv
+reddit_eggs.csv
+reddit_meat.csv
+reddit_processed_text.csv
+reddit_filtered.csv
+training.1600000.processed.noemoticon.csv

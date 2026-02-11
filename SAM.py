@@ -61,8 +61,6 @@ def preprocess_data(tweets):
         processed_tweets.append((words, sentiment))
     
     #print(processed_tweets)
-
-    #print(len(processed_tweets))
     
     keyword_tweets = []
 
@@ -73,7 +71,7 @@ def preprocess_data(tweets):
     
     #print(keyword_tweets)
 
-    #print(len(keyword_tweets))
+    print(f'Processed Tweets: {len(keyword_tweets)}')
 
     return keyword_tweets
 
@@ -84,6 +82,9 @@ processed_tweets = preprocess_data(tweets)
 split_ratio = 0.8
 split = int(len(processed_tweets) * split_ratio)
 train_data, test_data = processed_tweets[:split], processed_tweets[split:]
+print(f'Training Data: {len(train_data)}')
+print(f'Testing Data: {len(test_data)}')
+
 
 # Extract features from the training data
 training_features = [(extract_features(words), sentiment) for words, sentiment in train_data]
