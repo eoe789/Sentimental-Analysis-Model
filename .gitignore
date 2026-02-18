@@ -1,11 +1,20 @@
 .env
-reddit_healthy_food.csv
-reddit_meat.csv
-reddit_milk.csv
+google_news_filtered.csv
+news_sentiment_score.csv
+reddit_Agriculture.csv
+reddit_Agriculture_filtered.csv
+reddit_Agriculture_sentiment_score.csv
+reddit_food.csv
+reddit_food_filtered.csv
+reddit_food_sentiment_score.csv
+reddit_HealthyFood.csv
+reddit_HealthyFood_filtered.csv
+reddit_HealthyFood_sentiment_score.csv
 reddit_nutrition.csv
+reddit_nutrition_filtered.csv
+reddit_nutrition_sentiment_score.csv
 reddit_organic.csv
-reddit_eggs.csv
-reddit_meat.csv
-reddit_processed_text.csv
-reddit_filtered.csv
+reddit_organic_filtered.csv
+reddit_organic_sentiment_score.csv
 training.1600000.processed.noemoticon.csv
+old reddit data
