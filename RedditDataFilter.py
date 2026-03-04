@@ -13,7 +13,7 @@ from nltk.corpus import wordnet
 # nltk.download('averaged_perceptron_tagger_eng')
 # nltk.download('stopwords')
 
-SUBREDDIT = 'HealthyFood'
+SUBREDDIT = 'Agriculture'
 
 df = pd.read_csv(f'reddit_{SUBREDDIT}.csv')
 # Filtering Start
@@ -187,8 +187,9 @@ length_filter_df.to_csv('result.csv')
 final_df = length_filter_df[['raw_text']].copy()
 final_df['filtered_text'] = length_filter_df['combined_text']
 final_df['tokens'] = final_df['filtered_text'].apply(lambda x: str(x).split() if pd.notna(x) else [])
+final_df['date'] = pd.to_datetime(length_filter_df['created_utc'], utc=True).dt.date
 
-output_df = final_df[['raw_text', 'filtered_text', 'tokens']]
+output_df = final_df[['raw_text', 'filtered_text', 'tokens', 'date']]
 
 output_df.to_csv(f'reddit_{SUBREDDIT}_filtered.csv', index=False)
 

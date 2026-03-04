@@ -5,10 +5,10 @@ import pandas as pd;
 # Basic Extraction
 
 base_url = 'https://www.reddit.com'
-subreddits = ['HealthyFood', 'nutrition', 'organic', 'Milk', 'eggs', 'meat', 'food', 'cooking', 'Agriculture']
-keywords = ["organic", "natural", "egg", "milk", "dairy", "meat", "beef", "chicken", "gmo", "genetically modified", "livestock"]
+subreddits = ['HealthyFood', 'nutrition', 'organic', 'Milk', 'eggs', 'meat', 'food', 'Agriculture']
+keywords = ["organic", "natural", "gmo", "genetically modified", "humane", "plant-based", "pasture", "cage", "grass"]
 
-SUBREDDIT = 'HealthyFood'
+SUBREDDIT = 'Agriculture'
 
 endpoint = f'/r/{SUBREDDIT}'
 
